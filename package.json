@@ -8,6 +8,7 @@
     "eject": "expo eject",
     "lint": "eslint . --ext '.jsx,.js'",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "prepare": "husky install",
     "lint-staged": "lint-staged"
   },
   "lint-staged": {
