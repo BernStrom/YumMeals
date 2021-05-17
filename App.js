@@ -13,7 +13,7 @@ export default function App() {
           <Text>Result list</Text>
         </View>
       </SafeAreaView>
-      <ExpoStatusBar style='auto' />
+      <ExpoStatusBar style="auto" />
     </>
   );
 }
