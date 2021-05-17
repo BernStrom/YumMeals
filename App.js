@@ -7,13 +7,13 @@ export default function App() {
     <>
       <SafeAreaView style={styles.container}>
         <View style={styles.searchBar}>
-          <Text>Search Bar</Text>
+          <Text>Search</Text>
         </View>
         <View style={styles.list}>
           <Text>Result list</Text>
         </View>
       </SafeAreaView>
-      <ExpoStatusBar style='auto' />
+      <ExpoStatusBar style="auto" />
     </>
   );
 }
