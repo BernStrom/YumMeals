@@ -1,13 +1,14 @@
 import { StatusBar as ExpoStatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StatusBar, StyleSheet, SafeAreaView, View, Text } from 'react-native';
+import { Searchbar } from 'react-native-paper';
 
 export default function App() {
   return (
     <>
       <SafeAreaView style={styles.container}>
         <View style={styles.searchBar}>
-          <Text>Search</Text>
+          <Searchbar placeholder="Search" />
         </View>
         <View style={styles.list}>
           <Text>Result list</Text>
