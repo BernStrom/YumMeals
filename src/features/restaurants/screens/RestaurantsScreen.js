@@ -1,14 +1,10 @@
 import React from 'react';
-import { StatusBar, FlatList, SafeAreaView, View } from 'react-native';
+import { FlatList, View } from 'react-native';
 import { Searchbar } from 'react-native-paper';
 import styled from 'styled-components/native';
 
+import { SafeArea } from '../../../components/SafeArea/SafeArea';
 import { Spacer } from '../../../components/Spacer/Spacer';
-
-const SafeArea = styled(SafeAreaView)`
-  flex: 1;
-  ${StatusBar.currentHeight && `margin-top: ${StatusBar.currentHeight}px`};
-`;
 
 const SearchContainer = styled(View)`
   padding: ${(props) => props.theme.space[3]};
