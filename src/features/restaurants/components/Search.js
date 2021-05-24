@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { View } from 'react-native';
 import { Searchbar } from 'react-native-paper';
-import styled from 'styled-components';
+import styled from 'styled-components/native';
 
 import { LocationContext } from '../../../services/location/LocationContext';
 
