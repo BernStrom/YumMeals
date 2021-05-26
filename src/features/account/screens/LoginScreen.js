@@ -6,6 +6,7 @@ import {
   AccountContainer,
   AuthButton,
   AuthInput,
+  Title,
 } from '../components/Account.styles';
 import { Spacer } from '../../../components/Spacer/Spacer';
 import { CustomText as Text } from '../../../components/CustomText/CustomText';
@@ -20,6 +21,7 @@ export const LoginScreen = () => {
   return (
     <AccountBackground>
       <AccountCover />
+      <Title variant="caption">YumMeals</Title>
       <AccountContainer>
         <AuthInput
           label="E-mail"

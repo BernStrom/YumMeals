@@ -5,6 +5,7 @@ import {
   AccountCover,
   AccountContainer,
   AuthButton,
+  Title,
 } from '../components/Account.styles';
 import { Spacer } from '../../../components/Spacer/Spacer';
 
@@ -12,6 +13,7 @@ export const AccountScreen = ({ navigation }) => {
   return (
     <AccountBackground>
       <AccountCover />
+      <Title variant="caption">YumMeals</Title>
       <AccountContainer>
         <AuthButton
           icon="lock-open-outline"
