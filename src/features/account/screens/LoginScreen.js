@@ -7,6 +7,7 @@ import {
   AuthButton,
   AuthInput,
   Title,
+  ErrorContainer,
 } from '../components/Account.styles';
 import { Spacer } from '../../../components/Spacer/Spacer';
 import { CustomText as Text } from '../../../components/CustomText/CustomText';
@@ -43,9 +44,9 @@ export const LoginScreen = () => {
           />
         </Spacer>
         {error && (
-          <Spacer size="large">
+          <ErrorContainer size="large">
             <Text variant="error">{error}</Text>
-          </Spacer>
+          </ErrorContainer>
         )}
         <Spacer size="large">
           <AuthButton
