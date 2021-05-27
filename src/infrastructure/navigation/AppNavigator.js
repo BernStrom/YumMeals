@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Text, Button } from 'react-native';
+import { Button } from 'react-native-paper';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import { Ionicons } from '@expo/vector-icons';
@@ -24,8 +24,9 @@ const Settings = () => {
 
   return (
     <SafeArea>
-      <Text>Settings!</Text>
-      <Button title="logout" onPress={() => onLogout()} />
+      <Button icon="logout" onPress={() => onLogout()}>
+        logout
+      </Button>
     </SafeArea>
   );
 };
