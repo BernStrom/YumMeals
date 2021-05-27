@@ -9,6 +9,9 @@ import { RestaurantsNavigator } from './RestaurantsNavigator';
 import { MapScreen } from '../../features/map/screens/MapScreen';
 
 import { AuthenticationContext } from '../../services/authentication/AuthenticationContext';
+import { FavouritesContextProvider } from '../../services/favourites/FavouritesContext';
+import { LocationContextProvider } from '../../services/location/LocationContext';
+import { RestaurantsContextProvider } from '../../services/restaurants/RestaurantsContext';
 
 const TAB_ICON = {
   Restaurants: 'restaurant',
@@ -43,15 +46,21 @@ const createScreenOptions = ({ route }) => {
 };
 
 export const AppNavigator = () => (
-  <Tab.Navigator
-    screenOptions={createScreenOptions}
-    tabBarOptions={{
-      activeTintColor: 'tomato',
-      inactiveTintColor: 'gray',
-    }}
-  >
-    <Tab.Screen name="Restaurants" component={RestaurantsNavigator} />
-    <Tab.Screen name="Map" component={MapScreen} />
-    <Tab.Screen name="Settings" component={Settings} />
-  </Tab.Navigator>
+  <FavouritesContextProvider>
+    <LocationContextProvider>
+      <RestaurantsContextProvider>
+        <Tab.Navigator
+          screenOptions={createScreenOptions}
+          tabBarOptions={{
+            activeTintColor: 'tomato',
+            inactiveTintColor: 'gray',
+          }}
+        >
+          <Tab.Screen name="Restaurants" component={RestaurantsNavigator} />
+          <Tab.Screen name="Map" component={MapScreen} />
+          <Tab.Screen name="Settings" component={Settings} />
+        </Tab.Navigator>
+      </RestaurantsContextProvider>
+    </LocationContextProvider>
+  </FavouritesContextProvider>
 );
