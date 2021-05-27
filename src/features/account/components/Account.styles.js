@@ -21,7 +21,7 @@ export const AccountCover = styled(View)`
 `;
 
 export const AccountContainer = styled(View)`
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.5);
   padding: ${(props) => props.theme.space[4]};
   margin-top: ${(props) => props.theme.space[2]};
 `;
