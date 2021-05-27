@@ -47,3 +47,11 @@ export const ErrorContainer = styled(View)`
   margin-top: ${(props) => props.theme.space[2]};
   margin-bottom: ${(props) => props.theme.space[2]};
 `;
+
+export const AnimationWrapper = styled(View)`
+  width: 100%;
+  height: 40%;
+  position: absolute;
+  top: 80px;
+  padding: ${(props) => props.theme.space[2]};
+`;
