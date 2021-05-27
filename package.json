@@ -33,6 +33,7 @@
     "expo-font": "~9.1.0",
     "expo-status-bar": "~1.0.4",
     "firebase": "8.2.3",
+    "lottie-react-native": "3.5.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-41.0.0.tar.gz",
