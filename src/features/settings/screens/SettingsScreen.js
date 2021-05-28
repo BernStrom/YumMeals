@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { View } from 'react-native';
 import { List, Avatar } from 'react-native-paper';
-import styled from 'styled-components';
+import styled from 'styled-components/native';
 
 import { SafeArea } from '../../../components/SafeArea/SafeArea';
 import { Spacer } from '../../../components/Spacer/Spacer';
