@@ -48,7 +48,7 @@ export const FavouritesScreen = ({ navigation }) => {
           resizeMode="cover"
           autoPlay
           loop
-          source={require('../../../../assets/heartbreak-lottie.json')}
+          source={require('../../../../assets/animations/heartbreak-lottie.json')}
         />
       </LottieAnimationWrapper>
       <Text variant="label">No favourites yet</Text>

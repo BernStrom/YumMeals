@@ -21,7 +21,7 @@ export const AccountScreen = ({ navigation }) => {
           resizeMode="cover"
           autoPlay
           loop
-          source={require('../../../../assets/watermelon-lottie.json')}
+          source={require('../../../../assets/animations/watermelon-lottie.json')}
         />
       </LottieAnimationWrapper>
       <Title variant="caption">YumMeals</Title>

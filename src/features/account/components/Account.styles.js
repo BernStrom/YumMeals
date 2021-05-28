@@ -6,7 +6,7 @@ import { colors } from '../../../infrastructure/theme/colors';
 import { CustomText as Text } from '../../../components/CustomText/CustomText';
 
 export const AccountBackground = styled(ImageBackground).attrs({
-  source: require('../../../../assets/homepage_bg.jpg'),
+  source: require('../../../../assets/images/homepage_bg.jpg'),
 })`
   flex: 1;
   align-items: center;
