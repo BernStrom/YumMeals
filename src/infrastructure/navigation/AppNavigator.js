@@ -18,10 +18,6 @@ const TAB_ICON = {
 
 const Tab = createBottomTabNavigator();
 
-// ===== Mock Screen Components ===== //
-
-// ===== Mock Screen Components ===== //
-
 const createScreenOptions = ({ route }) => {
   const iconName = TAB_ICON[route.name];
 
