@@ -6,7 +6,7 @@ import { colors } from '../../../infrastructure/theme/colors';
 import { CustomText as Text } from '../../../components/CustomText/CustomText';
 
 export const AccountBackground = styled(ImageBackground).attrs({
-  source: require('../../../../assets/homepage_bg.jpg'),
+  source: require('../../../../assets/images/homepage_bg.jpg'),
 })`
   flex: 1;
   align-items: center;
@@ -46,12 +46,4 @@ export const ErrorContainer = styled(View)`
   align-self: center;
   margin-top: ${(props) => props.theme.space[2]};
   margin-bottom: ${(props) => props.theme.space[2]};
-`;
-
-export const AnimationWrapper = styled(View)`
-  width: 100%;
-  height: 40%;
-  position: absolute;
-  top: 80px;
-  padding: ${(props) => props.theme.space[2]};
 `;

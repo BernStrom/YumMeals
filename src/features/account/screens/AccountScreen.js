@@ -7,23 +7,23 @@ import {
   AccountContainer,
   AuthButton,
   Title,
-  AnimationWrapper,
 } from '../components/Account.styles';
 import { Spacer } from '../../../components/Spacer/Spacer';
+import { LottieAnimationWrapper } from '../../../components/LottieAnimationWrapper/LottieAnimationWrapper';
 
 export const AccountScreen = ({ navigation }) => {
   return (
     <AccountBackground>
       <AccountCover />
-      <AnimationWrapper>
+      <LottieAnimationWrapper>
         <LottieView
           key="animation"
           resizeMode="cover"
           autoPlay
           loop
-          source={require('../../../../assets/watermelon-lottie.json')}
+          source={require('../../../../assets/animations/watermelon-lottie.json')}
         />
-      </AnimationWrapper>
+      </LottieAnimationWrapper>
       <Title variant="caption">YumMeals</Title>
       <AccountContainer>
         <AuthButton

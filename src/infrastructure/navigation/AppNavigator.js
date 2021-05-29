@@ -1,14 +1,12 @@
-import React, { useContext } from 'react';
-import { Button } from 'react-native-paper';
+import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-
 import { Ionicons } from '@expo/vector-icons';
 
-import { SafeArea } from '../../components/SafeArea/SafeArea';
 import { RestaurantsNavigator } from './RestaurantsNavigator';
+import { SettingsNavigator } from './SettingsNavigator';
 import { MapScreen } from '../../features/map/screens/MapScreen';
+import { colors } from '../../infrastructure/theme/colors';
 
-import { AuthenticationContext } from '../../services/authentication/AuthenticationContext';
 import { FavouritesContextProvider } from '../../services/favourites/FavouritesContext';
 import { LocationContextProvider } from '../../services/location/LocationContext';
 import { RestaurantsContextProvider } from '../../services/restaurants/RestaurantsContext';
@@ -20,20 +18,6 @@ const TAB_ICON = {
 };
 
 const Tab = createBottomTabNavigator();
-
-// ===== Mock Screen Components ===== //
-const Settings = () => {
-  const { onLogout } = useContext(AuthenticationContext);
-
-  return (
-    <SafeArea>
-      <Button icon="logout" onPress={() => onLogout()}>
-        logout
-      </Button>
-    </SafeArea>
-  );
-};
-// ===== Mock Screen Components ===== //
 
 const createScreenOptions = ({ route }) => {
   const iconName = TAB_ICON[route.name];
@@ -52,13 +36,13 @@ export const AppNavigator = () => (
         <Tab.Navigator
           screenOptions={createScreenOptions}
           tabBarOptions={{
-            activeTintColor: 'tomato',
-            inactiveTintColor: 'gray',
+            activeTintColor: colors.brand.primary,
+            inactiveTintColor: colors.brand.muted,
           }}
         >
           <Tab.Screen name="Restaurants" component={RestaurantsNavigator} />
           <Tab.Screen name="Map" component={MapScreen} />
-          <Tab.Screen name="Settings" component={Settings} />
+          <Tab.Screen name="Settings" component={SettingsNavigator} />
         </Tab.Navigator>
       </RestaurantsContextProvider>
     </LocationContextProvider>

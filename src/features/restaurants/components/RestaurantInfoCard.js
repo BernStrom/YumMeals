@@ -6,8 +6,8 @@ import { Spacer } from '../../../components/Spacer/Spacer';
 import { CustomText as Text } from '../../../components/CustomText/CustomText';
 import { Favourite } from '../../../components/Favourite/Favourite';
 
-import star from '../../../../assets/star';
-import open from '../../../../assets/open';
+import star from '../../../../assets/icons/star';
+import open from '../../../../assets/icons/open';
 
 import {
   RestaurantCard,
