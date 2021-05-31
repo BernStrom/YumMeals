@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useCallback } from 'react';
 import { TouchableOpacity, View } from 'react-native';
 import { List, Avatar } from 'react-native-paper';
 import { useFocusEffect } from '@react-navigation/native';
@@ -28,9 +28,11 @@ export const SettingsScreen = ({ navigation }) => {
     setPhoto(photoUri);
   };
 
-  useFocusEffect(() => {
-    getProfilePicture(user);
-  }, [user]);
+  useFocusEffect(
+    useCallback(() => {
+      getProfilePicture(user);
+    }, [user])
+  );
 
   return (
     <SafeArea>
