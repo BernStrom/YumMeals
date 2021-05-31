@@ -12,7 +12,7 @@ const ProfileCamera = styled(Camera)`
   height: '100%';
 `;
 
-export const CameraScreen = () => {
+export const CameraScreen = ({ navigation }) => {
   const { user } = useContext(AuthenticationContext);
   const [hasPermission, setHasPermission] = useState(null);
   const cameraRef = useRef();
@@ -21,6 +21,7 @@ export const CameraScreen = () => {
     if (cameraRef) {
       const photo = await cameraRef.current.takePictureAsync();
       AsyncStorage.setItem(`${user.uid}-photo`, photo.uri);
+      navigation.goBack();
     }
   };
 
