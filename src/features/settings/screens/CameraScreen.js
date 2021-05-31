@@ -1,9 +1,11 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useContext, useRef, useState, useEffect } from 'react';
 import { View, TouchableOpacity } from 'react-native';
 import { Camera } from 'expo-camera';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import styled from 'styled-components/native';
 
 import { CustomText as Text } from '../../../components/CustomText/CustomText';
+import { AuthenticationContext } from '../../../services/authentication/AuthenticationContext';
 
 const ProfileCamera = styled(Camera)`
   width: '100%';
@@ -11,13 +13,14 @@ const ProfileCamera = styled(Camera)`
 `;
 
 export const CameraScreen = () => {
+  const { user } = useContext(AuthenticationContext);
   const [hasPermission, setHasPermission] = useState(null);
   const cameraRef = useRef();
 
   const snap = async () => {
     if (cameraRef) {
       const photo = await cameraRef.current.takePictureAsync();
-      console.log(photo);
+      AsyncStorage.setItem(`${user.uid}-photo`, photo.uri);
     }
   };
 
