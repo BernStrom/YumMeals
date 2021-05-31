@@ -5,6 +5,6 @@ export const LottieAnimationWrapper = styled(View)`
   width: 100%;
   height: 40%;
   position: absolute;
-  top: 80px;
+  top: 50px;
   padding: ${(props) => props.theme.space[2]};
 `;
