@@ -2,7 +2,7 @@ import camelize from 'camelize';
 
 export const locationRequest = (searchTerm) => {
   return fetch(
-    `http://localhost:5001/yummeals-e8d3d/us-central1/geocode?city=${searchTerm}`
+    `https://us-central1-yummeals-e8d3d.cloudfunctions.net/geocode?city=${searchTerm}`
   ).then((res) => {
     return res.json();
   });
