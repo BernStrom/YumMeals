@@ -1,21 +1,14 @@
-import { mocks, mockImages } from './mock';
 import camelize from 'camelize';
+import { host } from '../../utils/env';
 
 export const restaurantsRequest = (location) => {
-  return new Promise((resolve, reject) => {
-    const mock = mocks[location];
-    if (!mock) {
-      reject('not found');
-    }
-    resolve(mock);
+  return fetch(`${host}/placesNearby?location=${location}`).then((res) => {
+    return res.json();
   });
 };
 
 export const restaurantsTransform = ({ results = [] }) => {
   const mappedResults = results.map((restaurant) => {
-    restaurant.photos = restaurant.photos.map(() => {
-      return mockImages[Math.ceil(Math.random() * (mockImages.length - 1))];
-    });
     return {
       ...restaurant,
       address: restaurant.vicinity,

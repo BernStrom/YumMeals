@@ -1,1 +1,5 @@
 node_modules/
+
+# Firebase log files
+firebase-debug.log
+ui-debug.log
