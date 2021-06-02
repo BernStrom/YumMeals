@@ -1,5 +1,8 @@
 node_modules/
 
-# Firebase log files
+# Firebase logs
 firebase-debug.log
 ui-debug.log
+
+# Firebase env config
+.runtimeconfig.json
