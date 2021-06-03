@@ -43,8 +43,6 @@ module.exports.placesRequest = (request, response, client) => {
     })
     .then((res) => {
       res.data.results = res.data.results.map(addGoogleImage);
-      // Use addMockImage instead to limit API requests to Google during development
-      // Use addGoogleImage for testing out live images and publishing to Expo
       return response.json(res.data);
     })
     .catch((err) => {
