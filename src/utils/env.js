@@ -10,5 +10,5 @@ const localHost = 'http://localhost:5001/yummeals-e8d3d/us-central1';
 
 export const isAndroid = Platform.OS === 'android';
 export const isDevelopment = process.env.NODE_ENV === 'development';
-export const isMock = false; // Change isMock to true during development to limit API requests to Google
+export const isMock = true; // Change isMock to true during development to limit API requests to Google
 export const host = !isDevelopment || isAndroid ? liveHost : localHost;
