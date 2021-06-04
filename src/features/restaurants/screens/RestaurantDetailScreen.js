@@ -9,7 +9,7 @@ import { OrderButton } from '../components/RestaurantList.styles';
 
 import { CartContext } from '../../../services/cart/CartContext';
 
-export const RestaurantDetailScreen = ({ route }) => {
+export const RestaurantDetailScreen = ({ route, navigation }) => {
   const [breakfastExpanded, setBreakfastExpanded] = useState(false);
   const [lunchExpanded, setLunchExpanded] = useState(false);
   const [dinnerExpanded, setDinnerExpanded] = useState(false);
@@ -70,9 +70,10 @@ export const RestaurantDetailScreen = ({ route }) => {
         <OrderButton
           icon="cash-usd"
           mode="contained"
-          onPress={() =>
-            addToCart({ item: 'special', price: 1299 }, restaurant)
-          }
+          onPress={() => {
+            addToCart({ item: 'special', price: 1299 }, restaurant);
+            navigation.navigate('Checkout');
+          }}
         >
           Order Special Only $12.99
         </OrderButton>
