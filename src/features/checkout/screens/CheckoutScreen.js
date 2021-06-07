@@ -10,6 +10,8 @@ import {
   CartIconContainer,
   CartIcon,
   NameInput,
+  PayButton,
+  ClearButton,
 } from '../components/Checkout.styles';
 
 import { RestaurantInfoCard } from '../../restaurants/components/RestaurantInfoCard';
@@ -17,7 +19,7 @@ import { RestaurantInfoCard } from '../../restaurants/components/RestaurantInfoC
 import { CartContext } from '../../../services/cart/CartContext';
 
 export const CheckoutScreen = () => {
-  const { cart, restaurant, sum } = useContext(CartContext);
+  const { cart, clearCart, restaurant, sum } = useContext(CartContext);
   const [name, setName] = useState('');
 
   if (!cart.length || !restaurant) {
@@ -51,7 +53,22 @@ export const CheckoutScreen = () => {
           value={name}
           onChangeText={(nameText) => setName(nameText)}
         />
-        {name.length > 0 && <CreditCardInput name={name} />}
+        <Spacer position="top" size="large">
+          {name.length > 0 && <CreditCardInput name={name} />}
+        </Spacer>
+        <Spacer position="top" size="xxl" />
+        <PayButton
+          mode="contained"
+          icon="cash-usd"
+          onPress={() => console.log('Pay Now')}
+        >
+          Pay
+        </PayButton>
+        <Spacer position="top" size="large">
+          <ClearButton mode="contained" icon="cart-off" onPress={clearCart}>
+            Clear Cart
+          </ClearButton>
+        </Spacer>
       </ScrollView>
     </SafeArea>
   );
