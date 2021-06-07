@@ -1,3 +1,5 @@
 module.exports.payRequest = (request, response, stripe) => {
-  response.send('this is my payment gateway');
+  const body = JSON.parse(request.body);
+  console.log(body.token, body.amount, body.name);
+  response.send('success');
 };
