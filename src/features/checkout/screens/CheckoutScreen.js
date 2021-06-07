@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { ScrollView } from 'react-native';
 import { List } from 'react-native-paper';
 
@@ -6,7 +6,11 @@ import { SafeArea } from '../../../components/SafeArea/SafeArea';
 import { Spacer } from '../../../components/Spacer/Spacer';
 import { CustomText as Text } from '../../../components/CustomText/CustomText';
 import { CreditCardInput } from '../components/CreditCardInput';
-import { CartIconContainer, CartIcon } from '../components/Checkout.styles';
+import {
+  CartIconContainer,
+  CartIcon,
+  NameInput,
+} from '../components/Checkout.styles';
 
 import { RestaurantInfoCard } from '../../restaurants/components/RestaurantInfoCard';
 
@@ -14,6 +18,7 @@ import { CartContext } from '../../../services/cart/CartContext';
 
 export const CheckoutScreen = () => {
   const { cart, restaurant, sum } = useContext(CartContext);
+  const [name, setName] = useState('');
 
   if (!cart.length || !restaurant) {
     return (
@@ -41,7 +46,12 @@ export const CheckoutScreen = () => {
           </List.Section>
           <Text variant="body">Total: {sum / 100}</Text>
         </Spacer>
-        <CreditCardInput />
+        <NameInput
+          label="Name"
+          value={name}
+          onChangeText={(nameText) => setName(nameText)}
+        />
+        {name.length > 0 && <CreditCardInput name={name} />}
       </ScrollView>
     </SafeArea>
   );
