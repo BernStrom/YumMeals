@@ -9,6 +9,7 @@ import { CreditCardInput } from '../components/CreditCardInput';
 import {
   CartIconContainer,
   CartIcon,
+  PaymentProcessing,
   NameInput,
   PayButton,
   ClearButton,
@@ -23,13 +24,22 @@ export const CheckoutScreen = () => {
   const { cart, clearCart, restaurant, sum } = useContext(CartContext);
   const [name, setName] = useState('');
   const [card, setCard] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
 
   const onPay = () => {
+    setIsLoading(true);
     if (!card || !card.id) {
+      setIsLoading(false);
       console.log('some error');
       return;
     }
-    payRequest(card.id, sum, name);
+    payRequest(card.id, sum, name)
+      .then((result) => {
+        setIsLoading(false);
+      })
+      .catch((err) => {
+        setIsLoading(false);
+      });
   };
 
   if (!cart.length || !restaurant) {
@@ -46,6 +56,7 @@ export const CheckoutScreen = () => {
   return (
     <SafeArea>
       <RestaurantInfoCard restaurant={restaurant} />
+      {isLoading && <PaymentProcessing />}
       <ScrollView>
         <Spacer position="left" size="medium">
           <Spacer position="top" size="large">
@@ -69,11 +80,21 @@ export const CheckoutScreen = () => {
           )}
         </Spacer>
         <Spacer position="top" size="xxl" />
-        <PayButton mode="contained" icon="cash-usd" onPress={onPay}>
+        <PayButton
+          mode="contained"
+          icon="cash-usd"
+          onPress={onPay}
+          disabled={isLoading}
+        >
           Pay
         </PayButton>
         <Spacer position="top" size="large">
-          <ClearButton mode="contained" icon="cart-off" onPress={clearCart}>
+          <ClearButton
+            mode="contained"
+            icon="cart-off"
+            onPress={clearCart}
+            disabled={isLoading}
+          >
             Clear Cart
           </ClearButton>
         </Spacer>
