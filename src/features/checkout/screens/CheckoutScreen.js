@@ -20,7 +20,7 @@ import { RestaurantInfoCard } from '../../restaurants/components/RestaurantInfoC
 import { CartContext } from '../../../services/cart/CartContext';
 import { payRequest } from '../../../services/checkout/checkout.service';
 
-export const CheckoutScreen = () => {
+export const CheckoutScreen = ({ navigation }) => {
   const { cart, clearCart, restaurant, sum } = useContext(CartContext);
   const [name, setName] = useState('');
   const [card, setCard] = useState(null);
@@ -30,15 +30,22 @@ export const CheckoutScreen = () => {
     setIsLoading(true);
     if (!card || !card.id) {
       setIsLoading(false);
-      console.log('some error');
+      navigation.navigate('CheckoutError', {
+        error: 'Please fill in a valid credit card',
+      });
       return;
     }
     payRequest(card.id, sum, name)
-      .then((result) => {
+      .then(() => {
         setIsLoading(false);
+        clearCart();
+        navigation.navigate('CheckoutSuccess');
       })
       .catch((err) => {
         setIsLoading(false);
+        navigation.navigate('CheckoutError', {
+          error: err,
+        });
       });
   };
 
