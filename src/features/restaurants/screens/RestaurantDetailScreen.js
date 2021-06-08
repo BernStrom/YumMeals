@@ -75,7 +75,7 @@ export const RestaurantDetailScreen = ({ route, navigation }) => {
             navigation.navigate('Checkout');
           }}
         >
-          Order Special Only $12.99!
+          Order Special For Only $12.99!
         </OrderButton>
       </Spacer>
     </SafeArea>
