@@ -83,7 +83,15 @@ export const CheckoutScreen = ({ navigation }) => {
         />
         <Spacer position="top" size="large">
           {name.length > 0 && (
-            <CreditCardInput name={name} onSuccess={setCard} />
+            <CreditCardInput
+              name={name}
+              onSuccess={setCard}
+              onError={() =>
+                navigation.navigate('CheckoutError', {
+                  error: 'Something went wrong processing your credit card',
+                })
+              }
+            />
           )}
         </Spacer>
         <Spacer position="top" size="xxl" />
