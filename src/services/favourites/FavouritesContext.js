@@ -14,7 +14,7 @@ export const FavouritesContextProvider = ({ children }) => {
       const jsonValue = JSON.stringify(value);
       await AsyncStorage.setItem(`@favourites-${uid}`, jsonValue);
     } catch (err) {
-      console.log('error storing', err);
+      console.log('error saving favourites session', err);
     }
   };
 
@@ -23,7 +23,7 @@ export const FavouritesContextProvider = ({ children }) => {
       const jsonValue = await AsyncStorage.getItem(`@favourites-${uid}`);
       return jsonValue !== null ? setFavourites(JSON.parse(jsonValue)) : null;
     } catch (err) {
-      console.log('error loading', err);
+      console.log('error loading favourites session', err);
     }
   };
 
