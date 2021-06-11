@@ -8,6 +8,7 @@ import styled from 'styled-components/native';
 import { SafeArea } from '../../../components/SafeArea/SafeArea';
 import { Spacer } from '../../../components/Spacer/Spacer';
 import { CustomText as Text } from '../../../components/CustomText/CustomText';
+import { colors } from '../../../infrastructure/theme/colors';
 
 import { AuthenticationContext } from '../../../services/authentication/AuthenticationContext';
 
@@ -42,14 +43,14 @@ export const SettingsScreen = ({ navigation }) => {
             <Avatar.Icon
               size={180}
               icon="account-circle"
-              backgroundColor="#2182BD"
+              backgroundColor={colors.brand.primary}
             />
           )}
           {photo && (
             <Avatar.Image
               size={180}
               source={{ uri: photo }}
-              backgroundColor="#2182BD"
+              backgroundColor={colors.brand.primary}
             />
           )}
         </TouchableOpacity>
