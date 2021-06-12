@@ -3,7 +3,7 @@
   <a href="#eyes-preview">Preview</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#gear-core-tech-stack">Tech Stack</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#sparkles-main-features">Features</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#cameraflash-screenshots">Screenshots</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#camera_flash-screenshots">Screenshots</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-license-">License</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#warning-disclaimer">Disclaimer</a>
 </p>
@@ -16,6 +16,8 @@
   <img src="./assets/images/icon@3x.png" alt="App brand icon" />
 </div>
 
+<p align="center">Icons by <a href="https://www.flaticon.com/authors/freepik">Freepik</a></p>
+
 <br />
 
 ## :calling: About
@@ -26,7 +28,7 @@ The app also comes with an ordering and payment feature which utilizes services 
 
 The integrated Stripe payment service accepts any valid debit/ credit card. However, since this isn't a fully published production app, the payment feature is set to testing mode to mimic a real-life payment flow. For this, Stripe has provided a list of sample payment card details for testing purposes that users can use to make payments in this app.
 
-Note: _**Please refer to this link for the test card payment details provided by Stripe**_ 👉&nbsp; https://stripe.com/docs/testing#cards
+Note: _**Please refer here for the test card payment details provided by Stripe**_ 👉&nbsp; https://stripe.com/docs/testing#cards
 
 ## :eyes: Preview
 
@@ -35,14 +37,23 @@ Note: _**Please refer to this link for the test card payment details provided by
 ### Instructions to Preview (_iOS users, see note below_)
 
 1. Head over to the Google Play Store and download the Expo Go app
+
    - https://play.google.com/store/apps/details?id=host.exp.exponent
+
 2. Open the [Expo Go](https://play.google.com/store/apps/details?id=host.exp.exponent 'Expo Go') app or simply go to the [Expo website](https://expo.io/ 'Expo') and follow the instructions to register for an Expo account
+
    - Note: _**You will need an account on Expo in order to view the app!**_
+
 3. After completing step 1 and 2 above, open your device camera and scan the provided QR code in the link below:
+
    - https://expo.io/@bernn/YumMeals (_**Published version of app hosted on Expo**_)
+
 4. After scanning the QR code, the Expo Go app will automatically load up the app
+
    - Note: _**If this is your first time opening the app, it might take a while to load up. Please be patient!**_
+
 5. Enjoy! The app should be successfully loaded by now. Please feel free to play around and test out its features. If for any reason the app couldn't be loaded or any of the features are breaking, please report the issue at the link below.
+
    - https://github.com/BernStrom/YumMeals/issues
 
 ### IMPORTANT! - _Note for iOS users_
