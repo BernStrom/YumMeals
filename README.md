@@ -16,7 +16,7 @@
   <img src="./assets/images/icon@3x.png" alt="App brand icon" />
 </div>
 
-<p align="center">Icons by <a href="https://www.flaticon.com/authors/freepik">Freepik</a></p>
+<p align="center">Icons made by <a href="https://www.flaticon.com/authors/freepik">Freepik</a></p>
 
 <br />
 
