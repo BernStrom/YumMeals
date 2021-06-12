@@ -28,7 +28,7 @@ The app also comes with an ordering and payment feature which utilizes services 
 
 The integrated Stripe payment service accepts any valid debit/ credit card. However, since this isn't a fully published production app, the payment feature is set to testing mode to mimic a real-life payment flow. For this, Stripe has provided a list of sample payment card details for testing purposes that users can use to make payments in this app.
 
-Note: _**Please refer here for the test card payment details provided by Stripe**_ 👉&nbsp; https://stripe.com/docs/testing#cards
+_**Link to test card payment details provided by Stripe**_ 👉&nbsp; https://stripe.com/docs/testing#cards
 
 ## :eyes: Preview
 
