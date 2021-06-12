@@ -38,7 +38,7 @@ _**Link to test card payment details provided by Stripe**_ 👉&nbsp; https://st
 
 1. Head over to the Google Play Store and download the Expo Go app
 
-   - https://play.google.com/store/apps/details?id=host.exp.exponent
+   - Link: https://play.google.com/store/apps/details?id=host.exp.exponent
 
 2. Open the [Expo Go](https://play.google.com/store/apps/details?id=host.exp.exponent 'Expo Go') app or simply go to the [Expo website](https://expo.io/ 'Expo') and follow the instructions to register for an Expo account
 
