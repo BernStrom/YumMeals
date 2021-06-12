@@ -71,7 +71,7 @@ For this, please refer to the app screenshots below. A mixture of both screensho
 ## :gear: Core Tech Stack
 
 - :arrow_up_small:&nbsp; [Expo](https://expo.io/ 'Expo')
-- :electron:&nbsp; [React Native](https://reactnative.dev/ 'React Native')
+- :electron:&nbsp;[React Native](https://reactnative.dev/ 'React Native')
 - :page_with_curl:&nbsp; [React Native Paper](https://callstack.github.io/react-native-paper/index.html 'React Native Paper')
 - :link:&nbsp; [React Navigation](https://reactnavigation.org/ 'React Navigation')
 - :performing_arts:&nbsp; [Styled Components](https://styled-components.com/ 'Styled Components')
