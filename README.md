@@ -34,7 +34,7 @@ _**Link to test card payment details provided by Stripe**_ 👉&nbsp; https://st
 
 👉&nbsp; **[App Preview](https://expo.io/@bernn/YumMeals 'Preview YumMeals')**
 
-### Instructions to Preview (_iOS users, see note below_)
+### :1234: Instructions to Preview (_iOS users, see note below_)
 
 1. Head over to the Google Play Store and download the Expo Go app
 
@@ -46,7 +46,7 @@ _**Link to test card payment details provided by Stripe**_ 👉&nbsp; https://st
 
 3. After completing step 1 and 2 above, open your device camera and scan the provided QR code in the link below:
 
-   - https://expo.io/@bernn/YumMeals (_**Published version of app hosted on Expo**_)
+   - Link: https://expo.io/@bernn/YumMeals (_**Published version of app hosted on Expo**_)
 
 4. After scanning the QR code, the Expo Go app will automatically load up the app
 
@@ -54,15 +54,15 @@ _**Link to test card payment details provided by Stripe**_ 👉&nbsp; https://st
 
 5. Enjoy! The app should be successfully loaded by now. Please feel free to play around and test out its features. If for any reason the app couldn't be loaded or any of the features are breaking, please report the issue at the link below.
 
-   - https://github.com/BernStrom/YumMeals/issues
+   - Link: https://github.com/BernStrom/YumMeals/issues
 
-### IMPORTANT! - _Note for iOS users_
+### :bangbang: IMPORTANT! - _Note for iOS users_
 
 Unfortunately, iOS users will not be able to preview the published app hosted on Expo. This issue is due to restrictions imposed by Apple and not by Expo itself.
 
 Please refer to this Expo documentation link for further information on this restriction:
 
-- https://docs.expo.io/workflow/publishing/#on-ios-you-cant-share-your-published
+- Link: https://docs.expo.io/workflow/publishing/#on-ios-you-cant-share-your-published
 
 Due to the nature of this project objective being an educational and experimental one in learning more about working with [React Native](https://reactnative.dev/ 'React Native') and the [Expo](https://expo.io/ 'Expo') framework in a production-like environment mimicking a professional workflow, this app isn't built for distributing officially to either the [Play Store](https://play.google.com/store 'Google Play Store') or the [App Store](https://www.apple.com/app-store/ 'App Store').
 
