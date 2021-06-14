@@ -70,7 +70,7 @@ For this, please refer to the app screenshots below. A mixture of both screensho
 
 ## :gear: Core Tech Stack
 
-👉&nbsp; [Project Architecture Diagram](https://lucid.app/lucidchart/15755562-0611-44a5-95dd-9d72a85bc783/edit?page=0_0# "YumMeals App Architecture Diagram")
+👉&nbsp; [Project Architecture Diagram](https://lucid.app/lucidchart/invitations/accept/inv_6fab6816-4e33-4ab2-9039-1cab4f972b3d "YumMeals App Architecture Diagram")
 
 - :arrow_up_small:&nbsp; [Expo](https://expo.io/ 'Expo')
 - :electron:&nbsp;[React Native](https://reactnative.dev/ 'React Native')
