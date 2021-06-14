@@ -32,7 +32,7 @@ _**Link to test card payment details provided by Stripe**_ 👉&nbsp; https://st
 
 ## :eyes: Preview
 
-👉&nbsp; **[App Preview](https://expo.io/@bernn/YumMeals 'Preview YumMeals')**
+[![runs with Expo Go](https://img.shields.io/badge/Runs%20with%20Expo%20Go-4630EB.svg?style=flat-square&logo=EXPO&labelColor=f3f3f3&logoColor=000)](https://expo.io/@bernn/YumMeals)
 
 ### :1234: Instructions to Preview (_iOS users, see note below_)
 
@@ -70,7 +70,7 @@ For this, please refer to the app screenshots below. A mixture of both screensho
 
 ## :gear: Core Tech Stack
 
-👉&nbsp; [Project Architecture Diagram](https://lucid.app/lucidchart/invitations/accept/inv_6fab6816-4e33-4ab2-9039-1cab4f972b3d "YumMeals App Architecture Diagram")
+👉&nbsp; [Project Architecture Diagram](https://lucid.app/lucidchart/invitations/accept/inv_6fab6816-4e33-4ab2-9039-1cab4f972b3d 'YumMeals App Architecture Diagram')
 
 - :arrow_up_small:&nbsp; [Expo](https://expo.io/ 'Expo')
 - :electron:&nbsp;[React Native](https://reactnative.dev/ 'React Native')
@@ -100,7 +100,7 @@ For this, please refer to the app screenshots below. A mixture of both screensho
     <img src="./assets/screenshots/app-preview-user-settings.png" width="250">
 </p>
 
-## :memo: License [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+## :memo: License <a aria-label="YumMeals is free to use" href="https://choosealicense.com/licenses/mit/" target="_blank"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-success.svg?style=flat-square&color=33CC12" target="_blank" /></a>
 
 This project is under the terms of the MIT license. For more information, please refer to the license [documentation](LICENSE.md).
 
